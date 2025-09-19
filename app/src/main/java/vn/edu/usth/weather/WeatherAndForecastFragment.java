@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import androidx.annotation.Nullable;
 public class WeatherAndForecastFragment extends Fragment {
@@ -22,9 +23,7 @@ public class WeatherAndForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         Context ctx = getContext();
-        View v = inflater.inflate(R.layout.forecast_fragment,container,false);
-
-        LinearLayout listView = (LinearLayout)v;
+        View v = inflater.inflate(R.layout.forecast_fragment,container,false);LinearLayout listView = (LinearLayout)v;
         var weatherList = CreateForecastFragment(listView.getContext());
         listView.addView(weatherList);
 

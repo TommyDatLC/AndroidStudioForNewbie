@@ -17,7 +17,9 @@
                 <action android:name="android.intent.action.MAIN"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
+            
         </activity>
     </application>
-
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission-sdk-23>
 </manifest>
